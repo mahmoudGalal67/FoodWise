@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0" />
+    <link rel="stylesheet" href="./public/css/app.css" />
+    <link rel="stylesheet" href="./public/css/main.css" />
+    <link rel="stylesheet" href="./public/css/home.css" />
+    <link
+      rel="icon"
+      href="./public/assets/images/home/Foodwize-logo 1.png"
+      type="image/x-icon"
+    />
+    <!-- Carousel -->
+    <link
+      href="./public/assets/vendors/owl-carousel/owl.carousel.min.css"
+      rel="stylesheet"
+    />
+    <!-- Carousel -->
+    <!-- Emailjs -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("a4-8HC4-ik36hrx8q");
+      })();
+    </script>
+    <!-- Emailjs -->
+    <title>Food wise</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <nav class="flex justify-between sm:px-16 items-center px-6">
+        <div class="left">
+          <a href="/"
+            ><img src="./public/assets/images/home/Foodwize-logo 1.png" alt=""
+          /></a>
+        </div>
+        <div class="right lg:block hidden">
+          <ul class="nav-links flex gap-5 text-white text-lg p-5">
+            <a class="active" href="/"><li>Home</li></a>
+            <a href="./pages/about.html"><li>About</li></a>
+            <a href="./pages/catering.html"><li>Catering</li></a>
+            <a href="./pages/menu.html"><li>Menu</li></a>
+            <a href="./pages/gallary.html"><li>Gallery</li></a>
+            <a href="./pages/contact.html"><li>Contact</li></a>
+          </ul>
+        </div>
+        <!-- Toggler -->
+        <div class="lg:hidden block">
+          <div id="menuToggle" class="top-8">
+            <input type="checkbox" />
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <ul id="menu" class="text-white">
+              <a href="/"><li>Home</li></a>
+              <a href="./pages/about.html"><li>About</li></a>
+              <a href="./pages/catering.html"><li>Catering</li></a>
+              <a href="./pages/menu.html"><li>Menu</li></a>
+              <a href="./pages/gallary.html"><li>Gallery</li></a>
+              <a href="./pages/contact.html"><li>Contact</li></a>
+            </ul>
+          </div>
+        </div>
+        <!-- Toggler -->
+      </nav>
+      <div class="wrapper flex justify-center items-center text-white">
+        <div class="text-center p-6">
+          <img
+            class="block m-auto w-1/2"
+            src="./public/assets/images/home/Welcome.png"
+            alt=""
+          />
+          <h1 class="800:text-6xl text-3xl my-5">
+            Food Wize Hospitality<br />
+            Catering & Events Services
+          </h1>
+          <p class="text-2xl text-bold">It’s all about food passion!</p>
+        </div>
+      </div>
+    </header>
+    <!-- Header -->
+
+    <!-- Customized -->
+    <section id="customized" class="py-40 px-12">
+      <div class="customized bg-blue relative">
+        <div class="info px-12 py-6 text-white">
+          <div class="text-3xl my-5">
+            Customised, On-site <br />
+            Catering for Events
+          </div>
+          <div class="separator w-2/12 h-1 bg-orange"></div>
+          <ul>
+            <li class="my-3">Cocktails, canapés, buffet, holiday parties</li>
+            <li class="my-3">Onsite delivery & setup</li>
+            <li class="my-3">Menu development</li>
+            <li class="my-3">Full service waitstaff & bartenders available</li>
+            <li class="my-3">
+              Dishware, tableware, and furniture rentals available
+            </li>
+            <li class="my-3">Vegan friendly options</li>
+          </ul>
+        </div>
+        <img
+          class="absolute"
+          src="./public/assets/images/home/side-image-experience.png.png"
+          alt=""
+          loading="lazy"
+        />
+      </div>
+    </section>
+    <!-- Customized -->
+
+    <!-- Care -->
+    <section id="care" class="p-16 pb-0 relative">
+      <img
+        class="absolute top-0 w-32 right-24"
+        src="./public/assets/images/home/tag.png.png"
+        alt=""
+        loading="lazy"
+      />
+      <div class="care w-3/4 ml-auto">
+        <div>
+          <h3 class="text-center text-white text-4xl text-bold">
+            We Cater For
+          </h3>
+          <div class="wrapper flex flex-wrap mt-36">
+            <div class="item my-24 bg-white rounded-lg p-4 w-1/2 relative">
+              <img
+                class="w-40 absolute"
+                src="./public/assets/images/home/Canape-1-300x300.jpeg.png"
+                alt=""
+                loading="lazy"
+              />
+              <div class="text-black my-3 text-center">Canapés</div>
+              <div class="text-gray-500 text-sm text-center">
+                Our chefs can assemble the canapés on site to stay fresh and we
+                can design a canapé menu, from ‘starters’ to more essential
+                delicacies and finishing with exquisite sweet mini bites.
+              </div>
+            </div>
+            <div class="item my-24 bg-white rounded-lg p-4 w-1/2 relative">
+              <img
+                class="w-40 absolute"
+                src="./public/assets/images/home/Cocktail-300x300.jpeg.png"
+                alt=""
+                loading="lazy"
+              />
+              <div class="text-black my-3 text-center">Cocktail Parties</div>
+              <div class="text-gray-500 text-sm text-center">
+                Our cocktail style catering will add to your event a touch of
+                finesse and elegance. We provide a great variety of delicious
+                hors d'oeuvres and savories for your guests.
+              </div>
+            </div>
+            <div class="item my-24 bg-white rounded-lg p-4 w-1/2 relative">
+              <img
+                class="w-40 absolute"
+                src="./public/assets/images/home/Corporate-300x300.jpeg.png"
+                alt=""
+                loading="lazy"
+              />
+              <div class="text-black my-3 text-center">Corporate Events</div>
+              <div class="text-gray-500 text-sm text-center">
+                Events An end-to-end service that covers every aspect. We have
+                the personnel, the equipment, a long track-record and a long
+                list of satisfied customers.
+              </div>
+            </div>
+            <div class="item my-24 bg-white rounded-lg p-4 w-1/2 relative">
+              <img
+                class="w-40 absolute"
+                src="./public/assets/images/home/Gala-Dinner-300x300.jpeg.png"
+                alt=""
+                loading="lazy"
+              />
+              <div class="text-black my-3 text-center">Gala Dinners</div>
+              <div class="text-gray-500 text-sm text-center">
+                The limit is your imagination. We will discuss with you the
+                venue, theme, date, number of guests, and plan an ‘à la carte’
+                menu that will underline your occasion with innovational food
+                and original presentations.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Care -->
+
+    <!-- .popular-Chicken -->
+    <section id="popular" class="py-12 px-16">
+      <div class="text-center text-3xl font-bold mt-8">
+        Popular Chicken Dishes
+      </div>
+      <img
+        class="mt-2 block m-auto"
+        src="./public/assets/images/home/pseudo.png"
+        alt=""
+        loading="lazy"
+      />
+      <div class="wrapper mt-8 flex justify-around flex-wrap">
+        <div class="item text-center w-60">
+          <img
+            src="./public/assets/images/home/Chicken-Karahi-Dubai-1-300x300.jpg.png"
+            alt=""
+            loading="lazy"
+          />
+          <div class="font-bold text-lg my-5">Chicken Karahi</div>
+          <p class="text-gray-500">
+            Chicken Karhai is one of the famous desi cusine from
+          </p>
+        </div>
+        <div class="item text-center w-60">
+          <img
+            src="./public/assets/images/home/Omelette-Dubai-1-300x300.jpg.png"
+            alt=""
+            loading="lazy"
+          />
+          <div class="font-bold text-lg my-5">Omelette</div>
+          <p class="text-gray-500">
+            Omelette is very conventional and commonly eaten item of breakfast.
+          </p>
+        </div>
+        <div class="item text-center w-60">
+          <img
+            src="./public/assets/images/home/Halwa-Puri-Dubai-1-300x300.jpg.png"
+            alt=""
+            loading="lazy"
+          />
+          <div class="font-bold text-lg my-5">Halwa Puri</div>
+          <p class="text-gray-500">
+            Halwa Puri is traditional dish in indian subcontinent, comprising on
+          </p>
+        </div>
+        <div class="item text-center w-60">
+          <img
+            src="./public/assets/images/home/Strawberry-Milk-Shake-Dubai-1-300x300.jpg.png"
+            alt=""
+            loading="lazy"
+          />
+          <div class="font-bold text-lg my-5">Strawberry Milk Shake</div>
+          <p class="text-gray-500">
+            Strawberry Milk Shakes are another mouthwatering drink of summer. It
+          </p>
+        </div>
+      </div>
+      <a href="./pages/menu.html"
+        ><div
+          class="my-16 text-center py-4 bg-blue text-white m-auto w-40 hover:scale-110 transition-all duration-75 ease-in-out"
+        >
+          More Products
+        </div></a
+      >
+    </section>
+    <!-- .popular-Chicken -->
+
+    <!-- Inspire -->
+    <section id="inspire" class="p-12 text-white">
+      <div
+        class="wrapper text-center flex flex-col gap-12 justify-center items-center"
+      >
+        <img
+          src="./public/assets/images/home/Copper-Kettle-Taste-Badge.png.png"
+          alt=""
+          loading="lazy"
+        />
+        <span>Authentic Recipes Cooked With Love</span>
+        <h3 class="text-4xl font-bold">Food That Inspires Dubai</h3>
+        <p>
+          Chicken Chilli Dry - Chicken Kasturi Boti - Chicken Bihari Boti -
+          Chicken White Karahi
+        </p>
+      </div>
+    </section>
+    <!-- Inspire -->
+
+    <!-- .popular-Mutton -->
+    <section id="popular" class="py-12 px-16">
+      <div class="text-center text-3xl font-bold mt-8">
+        Popular Mutton Dishes
+      </div>
+      <img
+        class="mt-2 block m-auto"
+        src="./public/assets/images/home/pseudo.png"
+        alt=""
+        loading="lazy"
+      />
+      <div class="wrapper mt-8 flex justify-around flex-wrap">
+        <div class="item text-center w-60">
+          <img
+            src="./public/assets/images/home/Dum-Qeema-Dubai-1-300x300.jpg.png"
+            alt=""
+            loading="lazy"
+          />
+          <div class="font-bold text-lg my-5">Dum Qeema</div>
+          <p class="text-gray-500">
+            Dum Qeema is alo desi and reknowned cuisine, made of
+          </p>
+        </div>
+        <div class="item text-center w-60">
+          <img
+            src="./public/assets/images/home/Mutton-Achari-Handi-Dubai-1-300x300.jpg.png"
+            alt=""
+            loading="lazy"
+          />
+          <div class="font-bold text-lg my-5">Mutton Achari Handi</div>
+          <p class="text-gray-500">
+            Boneless meat with gravy of toamtoes served besides pickles.
+          </p>
+        </div>
+        <div class="item text-center w-60">
+          <img
+            src="./public/assets/images/home/Mutton-Balti-Gosht-Dubai-1-300x300.jpg.png"
+            alt=""
+            loading="lazy"
+          />
+          <div class="font-bold text-lg my-5">Mutton Balti Gosht</div>
+          <p class="text-gray-500">
+            Mutton gravy served with capsicum have distinct flavour.
+          </p>
+        </div>
+        <div class="item text-center w-60">
+          <img
+            src="./public/assets/images/home/Mutton-Karahi-Dubai-1-300x300.jpg.png"
+            alt=""
+            loading="lazy"
+          />
+          <div class="font-bold text-lg my-5">Mutton Karahi</div>
+          <p class="text-gray-500">
+            Traditional curry made of mutton and spices.
+          </p>
+        </div>
+      </div>
+      <a href="./pages/menu.html"
+        ><div
+          class="my-16 text-center py-4 bg-blue text-white m-auto w-40 hover:scale-110 transition-all duration-75 ease-in-out"
+        >
+          More Products
+        </div></a
+      >
+    </section>
+    <!-- .popular-Mutton -->
+
+    <!-- Testimonilas -->
+    <section id="testimonials" class="text-center md:p-16 p-5 text-white">
+      <h2 class="text-4xl font-bold mb-16">that we are proud to share!</h2>
+      <div class="owl-carousel">
+        <div
+          class="item flex md:w-3/4 w-full m-auto flex-col justify-center items-center"
+        >
+          <img
+            class="mb-6 w-32"
+            src="./public/assets/images/home/unnamed.png.png"
+            alt=""
+            loading="lazy"
+          />
+          <span class="my-3 text-blue">Екатерина Демурина</span>
+          <p>
+            Good day! I would like to thank you for organizing the catering. Our
+            travelers liked everything very much, it was delicious and
+            beautiful.
+          </p>
+        </div>
+        <div
+          class="item flex w-3/4 m-auto flex-col justify-center items-center"
+        >
+          <img
+            class="mb-6 w-32 rounded-full"
+            src="./public/assets/images/home/testimonials-1.jpg"
+            alt=""
+            loading="lazy"
+          />
+          <span class="my-3 text-blue">Matt Brandon</span>
+          <p>
+            thank you for being with me today my day was special with you
+            excellent organization, excellent service and a highly experience
+            team .
+          </p>
+        </div>
+        <div
+          class="item flex w-3/4 m-auto flex-col justify-center items-center"
+        >
+          <img
+            class="mb-6 w-32 rounded-full"
+            src="./public/assets/images/home/testimonials-2.jpg"
+            alt=""
+            loading="lazy"
+          />
+          <span class="my-3 text-blue">Sara Wilsson</span>
+          <p>
+            Certainly, you are my first choice, excellent and delicious food
+            quality , excellent service and well-trained youth.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonilas -->
+
+    <!-- Contact -->
+    <section id="contact" class="mt-12 sm:py-16 xl:px-36 p-8">
+      <div class="wrapper flex lg:flex-row flex-col justify-center">
+        <div class="inquiry p-8 bg-white flex-1">
+          <div class="text-xl my-5 font-bold">Send us your inquiry</div>
+          <form id="form" class="flex flex-col gap-5 justify-between">
+            <input
+              id="name"
+              type="text"
+              class="p-5 bg-gray-100 outline-none"
+              placeholder="Name*"
+            />
+            <input
+              id="email"
+              type="text"
+              class="p-5 bg-gray-100 outline-none"
+              placeholder="Email*"
+            />
+            <input
+              id="telephone"
+              type="text"
+              class="p-5 bg-gray-100 outline-none"
+              placeholder="Telephone*"
+            />
+            <input
+              id="eventType"
+              type="text"
+              class="p-5 bg-gray-100 outline-none"
+              placeholder="Event type*"
+            />
+            <input
+              id="guests"
+              type="text"
+              class="p-5 bg-gray-100 outline-none"
+              placeholder="Number of Guests*"
+            />
+            <div id="error" class="text-center text-red-500 hidden">
+              Please add all fields
+            </div>
+            <button
+              type="submit"
+              class="my-5 text-center py-4 bg-blue text-white hover:scale-110 transition-all duration-75 ease-in-out"
+            >
+              submit inquiry
+            </button>
+          </form>
+        </div>
+        <div class="info p-8 py-28 flex-1 flex justify-between items-center">
+          <div class="wrapper bg-white py-3 px-6">
+            <img
+              class="block m-auto"
+              src="./public/assets/images/home/Get in touch today.png"
+              alt=""
+              loading="lazy"
+            />
+            <p class="text-center text-sm">
+              If you are looking for a catering company that is passionate about
+              its work, that is vigilant in appointing ISO 22000:2018 certified,
+              skilled, and attentive team leaders when it comes to Food Safety
+              and Hygiene Standards and guarantees utmost client satisfaction,
+              then make sure that you get in touch with us right now.
+            </p>
+          </div>
+        </div>
+        <div class="contact bg-white px-8 py-16 flex-1">
+          <h3 class="my-12 text-xl font-bold text-center">CONTACTS</h3>
+          <p class="text-sm text-gray-500 my-6 text-center">
+            Mobile: +971 50 943 5155
+          </p>
+          <p class="text-sm text-gray-500 my-6 text-center">
+            Dubai - International city - Greece cluster - L01 building- shop
+            number 2
+          </p>
+          <p class="text-sm text-gray-500 my-6 text-center">
+            foodwizeuae@gmail.com
+          </p>
+          <h3 class="my-12 text-xl font-bold text-center">
+            foodwizeuae@gmail.com
+          </h3>
+          <p class="text-sm text-gray-500 my-6 text-center">
+            Saturday to Thursday: 9:00am to 6:00pm
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Contact -->
+
+    <!-- Footer -->
+    <footer class="py-6 text-white md:text-start text-center">
+      <div class="wrapper flex justify-center md:px-36 py-12 flex-wrap">
+        <div class="main-links xl:w-1/4 md:w-1/2 w-full xl:pl-24">
+          <div class="mb-5 font-bold text-lg">Main Links</div>
+          <ul>
+            <li class="text-gray-200"><a href="/">Home</a></li>
+            <li class="text-gray-200">
+              <a href="./pages/about.html">About us</a>
+            </li>
+            <li class="text-gray-200"><a href="./pages/menu.html">Menu</a></li>
+            <li class="text-gray-200">
+              <a href="./pages/gallary.html">Gallery</a>
+            </li>
+            <li class="text-gray-200">
+              <a href="./pages/contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="additional-links xl:w-1/4 md:w-1/2 w-full xl:pl-12">
+          <div class="mb-5 font-bold text-lg">Contact Us</div>
+          <ul>
+            <li class="text-gray-200">Catering</li>
+            <li class="text-gray-200">Corporate Catering</li>
+            <li class="text-gray-200">Private Banqueting</li>
+            <li class="text-gray-200">Inquiry</li>
+          </ul>
+        </div>
+        <div class="get-toutch xl:w-1/4 md:w-1/2 w-full">
+          <div class="mb-5 font-bold text-lg">Get in touch</div>
+          <p class="my-2 text-gray-200">
+            Address: Dubai - International city - Greece cluster - L01 building-
+            shop number 2
+          </p>
+          <p class="my-2 text-gray-200">
+            Email:
+            <a href="mailto:foodwizeuae@gmail.com">foodwizeuae@gmail.com</a>
+          </p>
+          <div
+            class="my-2 text-gray-200 flex gap-3 justify-center md:justify-start items-center"
+          >
+            <span>Mobile:</span>
+            <div class="flex flex-col">
+              <a href="tel:+971 05 434 70707">+971 05 434 70707</a>
+              <a href="tel:+971 50 943 5155">+971 50 943 5155</a>
+            </div>
+          </div>
+          <div class="font-bold text-lg">Secure Payment</div>
+          <img
+            class="md:inline block m-auto"
+            src="./public//assets/images/home/layer-23.png.png"
+            alt=""
+            loading="lazy"
+          />
+        </div>
+        <div class="icons xl:w-1/4 md:w-1/2 w-full">
+          <img
+            src="./public/assets/images/home/Foodwize-logo 1.png"
+            class="md:inline block m-auto w-48"
+            alt=""
+          />
+          <div
+            class="icon-wrapper my-16 flex items-center md:justify-start justify-center gap-3"
+          >
+            <div
+              class="icon w-10 p-3 rounded-full flex justify-center items-center bg-gray-800 hover:bg-gray-500"
+            >
+              <a href="https://www.facebook.com/profile.php?id=100090324656365"
+                ><img
+                  src="./public/assets/images/home/Icon/Facebook.png"
+                  alt=""
+                  loading="lazy"
+              /></a>
+            </div>
+            <div
+              class="icon w-10 p-3 rounded-full flex justify-center items-center bg-gray-800 hover:bg-gray-500"
+            >
+              <a href="https://www.instagram.com/foodwize.pro/">
+                <img
+                  src="./public/assets/images/home/Icon/Instagram.png"
+                  alt=""
+                  loading="lazy"
+              /></a>
+            </div>
+            <div
+              class="icon w-10 p-3 rounded-full flex justify-center items-center bg-gray-800 hover:bg-gray-500"
+            >
+              <a href="https://www.linkedin.com/in/foodwize-uae-549173268/"
+                ><img
+                  src="./public/assets/images/home/Icon/Linkedin.png"
+                  alt=""
+                  loading="lazy"
+              /></a>
+            </div>
+            <div
+              class="icon w-10 p-3 rounded-full flex justify-center items-center bg-gray-800 hover:bg-gray-500"
+            >
+              <a href="https://twitter.com/FoodWizeUAE"
+                ><img
+                  src="./public/assets/images/home/Icon/Twitter.png"
+                  alt=""
+                  loading="lazy"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="copy-right p-6 border-t-2 border-gray-500 text-white text-center"
+      >
+        <div>
+          Copyright © 2023. Design and developed by
+          <a href="https://adsamy.com/">Adsamy Marketing Agency</a>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer -->
+    <!-- Carousel -->
+    <script src="./public/assets/vendors/jquery/jquery.min.js"></script>
+    <script src="./public/assets/vendors/owl-carousel/owl.carousel.min.js"></script>
+    <script src="./public/js/main.js"></script>
+    <script>
+      $(".owl-carousel").owlCarousel({
+        autoplay: true,
+        dots: true,
+        loop: true,
+        nav: true,
+        navText: ["<", ">"],
+        responsive: {
+          0: {
+            items: 1,
+          },
+        },
+      });
+    </script>
+    <!-- Carousel -->
+  </body>
+</html>

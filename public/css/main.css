@@ -1,0 +1,234 @@
+body{
+  overflow-x: hidden;
+  background: url(../assets/images/home/i-like-food.svg);
+  background-position: center;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img{
+  object-fit: cover;
+}
+
+a{
+  text-decoration: none;
+}
+
+a:hover{
+  color: gray;
+}
+
+ul{
+  list-style: none;
+}
+
+/* Nav */
+
+nav .left{
+  width: 180px;
+}
+
+nav{
+  background-color: rgba(38, 38, 38, 0.65);
+  height: 70px;
+}
+
+nav ul li{
+  font-size: 16px;
+  padding: 4px;
+  border: 1px solid transparent;
+  transition: all .3s ease-in-out;
+}
+
+nav ul li:hover,
+.nav-links a.active,
+#menu li:hover
+{
+  color:#D65F4D;
+  border: 1px solid #D65F4D;
+}
+
+
+/* Toggler  */
+
+.togller{
+  background-color: rgba(38, 38, 38, 0.65);
+}
+
+#menuToggle
+{
+  /* display: block; */
+  position: absolute;
+  right: 50px;
+  z-index:100;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; 
+  z-index: 2; 
+  
+  -webkit-touch-callout: none;
+}
+
+
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #cdcdcd;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu
+{
+  position: absolute;
+  right: -50px;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  background-color: rgba(38, 38, 38, 0.95);
+  
+  transform: translateX(300px);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+/* header */
+
+header .wrapper{
+  height: 60vh;
+}
+
+
+/* Contact */
+
+#contact{
+  background: url(../assets/images/home/rs-sbg.png);
+  background-position: center;
+  background-size: cover;
+}
+
+#contact .info{
+  background: url(../assets/images/home/info.png);
+  background-position: center;
+  background-size: cover;
+}
+
+
+/* Footer */
+
+footer{
+  background: url(../assets/images/home/Group\ 1000004688.png);
+  background-position: center;
+  background-size: cover;
+  font-size: 14px;
+}
+
+/* Contact&about-pgaes */
+
+#follow{
+  background: url(../assets/images/home/div\(4\).png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+@media (max-width:860px) {
+  nav .left img{
+    width: 70%;
+  }
+  #menuToggle{
+    top: 20px;
+  }
+}
+
+
+@media (max-width:800px) {
+  footer{
+    background: url(../assets/images/home/mopfooter.png);
+    background-size: cover;
+  }
+}
+
+
+@media (min-width:600px) {
+  header{
+    -webkit-clip-path: ellipse(100% 64% at 52% 36%);
+    clip-path: ellipse(100% 64% at 52% 36%);
+  }
+  header .wrapper{
+  height: 65vh;
+  }
+}

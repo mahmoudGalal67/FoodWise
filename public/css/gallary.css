@@ -1,0 +1,41 @@
+/* Header */
+
+header{
+  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(../assets/images/headers/top-view-table-full-delicious-food-composition.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+header .wrapper{
+  height: 35vh;
+  }
+
+
+
+#gallary .wrapper{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 30px;
+}
+
+#gallary .wrapper .first,
+#gallary .wrapper .last{
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+@media (min-width:600px) {
+  header{
+    -webkit-clip-path: ellipse(100% 64% at 52% 36%);
+    clip-path: ellipse(100% 64% at 52% 36%);
+  }
+  header .wrapper{
+  height: 35vh;
+  }
+}
+
+@media (max-width:750px) {
+  #gallary .wrapper{
+    grid-template-columns: repeat(2,1fr);
+  }
+}

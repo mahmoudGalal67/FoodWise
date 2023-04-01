@@ -1,0 +1,134 @@
+/* Header */
+
+header{
+  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(../assets/images/headers/tasty-fresh-appetizing-italian-food-ingredients-dark-background.jpg);
+  background-position: center;
+}
+
+  header .wrapper{
+  height: 85vh;
+  }
+
+/* Customized */
+
+
+.customized img{
+  width: 450px;
+  height: 140%;
+  top: -20%;
+  right: 60px;
+}
+
+/* Care */
+
+section#care{
+  background: url(../assets/images/home/div\ \(1\).png);
+  background-position: center;
+  background-size: cover;
+}
+
+section#care h3{
+  margin-bottom: -20px;
+}
+
+section#care .item{
+  margin: 100px 20px;
+  width: calc(50% - 40px);
+}
+
+section#care .item img{
+  bottom: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Inspire */
+
+#inspire{
+  background: url(../assets/images/home/div.png);
+  background-position: center;
+  background-size: cover;
+}
+
+/* Testimonials */
+
+.owl-carousel .owl-nav {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  right: 0;
+}
+
+.owl-carousel .owl-nav .owl-prev, .owl-next{
+  position: absolute;
+  border: none;
+  z-index: 100;
+  width: 40px;
+  height: 40px;
+  background-color: #2A565F !important;
+  color: white;
+}
+
+.owl-carousel .owl-nav .owl-prev {
+  left: 0;
+}
+.owl-carousel .owl-nav .owl-next {
+  right: 0;
+}
+
+#testimonials{
+  background: url(../assets/images/home/testimonials.png);
+  background-position: center;
+  background-size: cover;
+}
+
+#testimonials .owl-carousel .owl-item img {
+  width: 5rem;
+}
+
+
+/* Media-queries */
+
+@media (min-width:1080px) {
+.customized .info{
+  margin-left: 10%;
+}
+}
+@media (max-width:1080px) {
+  #customized{
+    padding: 40px;
+  }
+  .customized img{
+    position: static;
+    margin: auto;
+  }
+  .customized .info{
+    text-align: center;
+  }
+  .customized .info .separator{
+    margin: auto;
+  }
+}
+
+@media (max-width:800px) {
+  #care .care{
+    width: 100%;
+  }
+  section#care h3{
+    margin-top: 110px;
+  }
+  section#care .item{
+    width: 100%;
+  }
+  section#care{
+    background: url(../assets/images/home/divf.png);
+    background-size: cover;
+  }
+}
+
+@media (min-width:600px) {
+  header{
+    -webkit-clip-path: ellipse(100% 64% at 52% 36%);
+    clip-path: ellipse(100% 64% at 52% 36%);
+  }
+}

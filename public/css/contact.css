@@ -1,0 +1,22 @@
+/* Header */
+
+header{
+  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(../assets/images/headers/barista-making-classic-cappuccino.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+header .wrapper{
+  height: 35vh;
+  }
+
+
+  @media (min-width:600px) {
+    header{
+      -webkit-clip-path: ellipse(100% 64% at 52% 36%);
+      clip-path: ellipse(100% 64% at 52% 36%);
+    }
+    header .wrapper{
+    height: 35vh;
+    }
+  }
